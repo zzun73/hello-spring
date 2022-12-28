@@ -5,7 +5,7 @@ import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
-@Repository
+// @Repository // 컴포넌트 스캔 방식 사용
 public class MemoryMemberRepository implements MemberRepository {  /** 인터메이스 메서드 구현: Alt + Enter */
 
     private static Map<Long, Member> store = new HashMap<>(); // 실무에서는 동시성 문제 발생함
