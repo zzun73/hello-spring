@@ -34,6 +34,11 @@ public class SpringConfig {
 //        return new JpaMemberRepository(em); // JPA 사용시
 //    }
 
+    // AOP를 직접 bean에 등록하는 방법
+//    @Bean
+//    public TimeTraceAOP timeTraceAOP() {
+//        return new TimeTraceAOP();
+//    }
 
     // 스프링 데이터 JPA 사용할 경우
     private final MemberRepository memberRepository;
